@@ -1,0 +1,112 @@
+
+.box {
+    /* 设置背景图像 css3 */
+    background-image: url(../images/背景图.jpg);
+    height: 1000px;
+    width: 100%;
+    /* 不平铺 */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo{
+    /* 内边距 */
+    width: 150px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+
+}
+
+/* css3 动画 设置 */
+.logo a{
+    color: red;
+    /* @keyframes 的名字 */
+    animation-name:myfirst;
+    /* 动画运行一周期的时间 */
+    animation-duration:5s;
+    /* 匀速播放 */
+    animation-timing-function:linear;
+    /* 动画开始时间 */
+    animation-delay:2s;
+    /* 无限循环 */
+    animation-iteration-count:infinite;
+    /* 下一周期，反向播放 */
+    animation-direction:alternate;
+    /* 运行动画 */
+	animation-play-state:running;
+}
+@keyframes myfirst
+{
+	0%   {color:red; }
+	25%  {color:yellow; }
+	50%  {color:blue; }
+	75%  {color:green; }
+	100% {color:red; }
+}
+/* css3 动画设置结束 */
+
+a {
+    /* 去掉下划线 */
+    text-decoration: none;
+}
+
+.box2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(250, 245, 249);
+}
+
+
+div h1 {
+    /* 居中 */
+    text-align: center;
+}
+
+
+.box3 {
+    /* 底部div */
+    width: 100%;
+    height: 120px;
+    background-color: pink;
+    /* 清除浮动 */
+    clear: left;
+    padding-top: 20px;
+}
+
+
+p {
+    text-indent: 2em;
+}
+
+footer {
+    /* 底部 */
+    text-align: center;
+}
+
+footer a{
+    color: #000;
+}
+
+
+/* 返回顶部设置 */
+#myBtn {
+    display: none;
+    /* 绝对定位  固定定位 */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+/* 返回顶部设置结束 */

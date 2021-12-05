@@ -1,0 +1,33 @@
+
+
+.zhu {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+.flex1{
+    /* 弹性布局 */
+    display: flex;
+    /* border: 3px solid #000; */
+}
+
+.hw1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hw2{
+    padding-right: 20px;
+}
+
+.img1{
+    padding-top: 60px;
+}
+
+video{
+    padding-top: 30px;
+    padding-right: 50px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系电话
+    </title>
+    <link rel="shortcut icon" href="../static/images/头像.jpg" />
+    <!-- 调用css -->
+    <link rel="stylesheet" type="text/css" href="../static/css/background.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/guju.css">
+    <style type="text/css">
+        .page{
+            list-style: none;
+            float: left;
+            padding-left: 0.5% ;
+        }
+    </style>
+</head>
+<body>
+    <p style="width: 100%;height:30px;background: #2176BD;text-align: center;"><a href="/" style="color: white;text-decoration: none;">- 返回首页 -</a></p>
+    <div class="box">
+        <div class="box1">
+            <!-- 网站logo标识 -->
+            <div class="logo">
+                <a  style="color: red;">
+                    <div style="font-size: 150%;"><b>&nbsp;联系方式</b></div>
+                </a>
+            </div>
+            <!-- logo结束 -->
+        </div>
+        <div class="box2">
+            <!-- 主要内容 -->
+            <div class="zhu">
+        <table border="3px" width="90%" style="border-collapse: collapse;">
+        <a href="/sims/add/">新增联系人</a>
+        <tr>
+        <th>姓名</th>
+        <th>关系</th>
+        <th>联系方式</th>
+        <th>操作</th>
+         </tr>
+            {% for student in students %}
+            <tr>
+            <td align="center">{{ forloop.counter }} </td>
+            <td align="center">{{ student.student_name }} </td>
+            <td align="center">{{ student.student_no }} </td>
+            <td align="center">
+                <a href="../sims/edit/?id={{ student.id }}">
+                    编辑
+                </a>
+                <a href="../sims/delete/?id={{ student.id }}">
+                    删除
+                </a>
+            </td>
+            </tr>
+            {% endfor %}
+            </form>
+        </table>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="回顶部">返回顶部</button>
+            <!-- 调用js代码 -->
+            <script src="../static/js/return_top.js"></script>
+
+        </div>
+    </div>
+</body>
+</html>
+

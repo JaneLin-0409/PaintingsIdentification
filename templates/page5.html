@@ -1,0 +1,256 @@
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Fairy的个人页面</title>
+		<link rel="shortcut icon" href="./static/images/头像.jpg" />
+		<link href="./static/css/style.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="stylesheet" href="./static/css/animate.min.css">
+		<!-- 用于背景动态样式 -->
+		<!-- <link rel="stylesheet" href="css/style2.css" type="text/css" /> -->
+
+		<script src="./static/js/wow.min.js"></script>
+		<script src="./static/js/jquery-1.12.4.min.js"></script>
+		<script>
+			if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			new WOW().init();
+		};
+		</script>
+
+		<!-- 响应式布局 -->
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+
+		
+		<!-- 用于背景动态样式 -->
+		<!-- <script type="text/javascript" src='js/TweenMax.min.js'></script>
+		<script type="text/javascript" src="js/index.js"></script> -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo">
+				<img src="./static/images/头像.jpg" class="xwcms" onmouseover="this.src='images/头像.jpg'"
+				 onmouseout="this.src='images/头像.jpg'" />
+				<div class="logo-text"><span style="color:#F3f6f7;">Fairy的个人页面</span></div>
+			</div>
+			<div class="right-block">
+				<div class="wow pulse bg-yellow" data-wow-delay="0.1s">求人不如求己</div>
+				<div class="wow rollIn bg-red" data-wow-iteration="1" data-wow-duration="1s">知人者智！</div>
+				<div class="wow bounceInRight bg-blue">自知之明！！</div>
+				<div class="wow bounceInRight bg-blue">——仙仙的人生座右铭</div>
+			</div>
+		</header>
+		<!--  网站地图样式  -->
+		<style>
+			.table_map{
+				width: 100%;
+				border: 1px solid darkgray;
+			}
+			.table_map .map_title{
+				height: 50px;
+				background:#53868B;
+				font-size: 25px;
+			}
+			.table_map .table_content{
+				height: 80px;
+				text-align: center;
+			}
+		</style>
+		<!--   -->
+		<div class="clear">
+		</div>
+		<nav id="nav" class="nav-wrap">
+			<ul class="clearfix">
+				<li class="menuactive" style="background:#53868B;">
+					<a href="/">
+						首页
+					</a>
+				</li>
+
+				<li>
+					<a href="/2">
+						个人简介
+					</a>
+				</li>
+
+				<li>
+					<a href="/3">
+						家庭成员
+					</a>
+				</li>
+
+				<li>
+					<a href="/4">
+						旅游足迹
+					</a>
+				</li>
+
+
+				
+				<li id="navEnd" style="background:#FF7256;">
+					<a href="/5">
+						网站地图
+					</a>
+				</li>
+				
+				<div class="Alert" style="width: 400px; height:100%;float: right;">
+					<div class="Alert_text" style="margin: 10px;color: black;text-align: center;font-size: 17px;">
+						<strong><a href="https://user.qzone.qq.com/842546751/infocenter" target="_blank">崔王仙子的其他相关信息</a></strong>
+					</div>
+				</div>
+
+			</ul>
+		</nav>
+
+		<section class="banner">
+			<div class="youtiy_slider">
+				<div class="bd">
+					<ul>
+						<li><a target="_blank" href="/2"><img src="./static/images/个人简介.jpg" /></a></li>
+						<li><a target="_blank" href="/3"><img src="./static/images/家庭成员.jpg" /></a></li>
+						<li><a target="_blank" href="/4"><img src="./static/images/旅游足迹.jpg" /></a></li>
+					</ul>
+				</div>
+				<div class="hd">
+					<ul>
+					</ul>
+				</div>
+				<div class="pnBtn prev"><span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a></div>
+				<div class="pnBtn next"><span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a></div>
+			</div>
+		</section>
+
+		<section class="container-content">
+			<div class="article-list">
+				<div class="item" style="height: 150px;">
+					
+					<table cellspacing="0" cellpadding="0" border="1" class="table_map">
+						<th class="map_title"><a href="/5">网站导航</a></th>
+						
+						<tr class="table_content">
+							<td><a href="/1">首页</a></td>
+						</tr>
+						
+					</table>
+					
+				</div>
+				
+				<div class="item" style="height: 100px;">
+					
+					<table cellspacing="0" cellpadding="0" border="1" class="table_map">
+						<th class="map_title"><a href="/2">个人简介</a></th>
+						
+						<tr class="table_content">
+							<td><a href="/2">个人简介</a></td>
+						</tr>	
+					</table>
+					
+				</div>
+				
+				<div class="item" style="height: 100px;">
+					
+					<table cellspacing="0" cellpadding="0" border="1" class="table_map">
+						<th class="map_title"><a href="/3">家庭成员</a></th>
+						
+						<tr class="table_content">
+							<td><a href="/3">家庭成员</a></td>
+						</tr>
+					</table>
+					
+				</div>
+				
+				<div class="item" style="height: 100px;">
+					
+					<table cellspacing="0" cellpadding="0" border="1" class="table_map">
+						<th class="map_title"><a href="/4">旅游足迹</a></th>
+						
+						<tr class="table_content">
+							<td><a href="/4">旅游足迹</a></td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+			<div class="right-fun">
+				<div class="model">
+					<div class="title">快捷菜单</div>
+					<div class="menu">
+						<span><a href="/2">个人简介</a></span>
+						<span><a href="/3">家庭成员</a></span>
+						<span><a href="/4">旅游足迹</a></span>
+						<span><a href="/5">网站地图</a></span>
+					</div>
+				</div>
+
+				<div class="model recommend">
+					<div class="title">相关推荐</div>
+					<div class="content">
+						<p>
+							<a href="/7">我的日记</a>
+						</p>
+						<p>
+							<a href="/6">照片墙</a>
+						</p>
+						<p>
+							<a href="/9">留言板</a>
+						</p>
+						<p>
+							<a href="/sims/">联系方式</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="clear">
+		</div>
+
+		<footer class="footer">
+			<div class="footer_content">
+				
+
+			<footer>本网站始建于2021年9月</footer>
+			<footer>网站创建人：崔王仙子（Fairy）</footer>
+			<footer>本网站为Web开发考查作品</footer>
+			</div>
+		</footer>
+
+
+		<script src="./static/js/jquery.min.js"></script>
+		<!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+		<script src="./static/js/superslide.2.1.js"></script>
+		<script type="text/javascript">
+			jQuery(".youtiy_slider .bd li").first().before(jQuery(".youtiy_slider .bd li").last());
+			jQuery(".youtiy_slider").hover(function() {
+				jQuery(this).find(".arrow").stop(true, true).fadeIn(300)
+			}, function() {
+				jQuery(this).find(".arrow").fadeOut(300)
+			});
+			jQuery(".youtiy_slider").slide({
+				titCell: ".hd ul",
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPlay: true,
+				vis: 3,
+				autoPage: true,
+				trigger: "mouseover"
+			});
+
+
+			$(document).ready(function(e) {
+				var offset = 890;
+				$(window).on('scroll', function() {
+					if ($(this).scrollTop() > offset) {
+						$('.recommend').css('position', 'fixed');
+						$('.recommend').css('top', '0px');
+					} else {
+						$('.recommend').css('position', '');
+					}
+				});
+			});
+		</script>
+
+
+	</body>
+</html>

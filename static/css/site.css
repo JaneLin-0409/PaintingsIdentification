@@ -1,0 +1,79 @@
+
+section{
+    /* 边框 */
+    padding: 15px;
+    border: 3px solid rgb(228, 85, 85);
+}
+
+#border-radius{
+    /*css3圆角效果： 全圆角效果 */
+    border-radius: 30px;
+}
+
+#border-irregular-radius10{
+    border-radius: 60px 60px 0px 0px;
+}
+
+#border-irregular-radius01{
+    border-radius: 0px 0px 60px 60px;
+}
+
+#border-irregular-radius1{
+    /* 不规则圆角 左上 右上 右下 左下 */
+    border-radius: 20px 80px;
+}
+
+#border-irregular-radius2{
+    /* 不规则圆角 左上 右上 右下 左下 */
+    border-radius: 80px 20px;
+}
+
+.zhu {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+video{
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+/* 相对定位 */
+.zuo1{
+    position: relative;
+    top: 0px;
+    left: -70px;
+}
+.zuo2{
+    position: relative;
+    top: 0px;
+    left: -140px;
+}
+.you1{
+    position: relative;
+    top: 0px;
+    left: 70px;
+}
+/* 绝对定位 */
+.img1{
+    float: left;
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    top: 3030px;
+    left: -5px;
+}
+.img2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 1900px;
+    left: 1030px;
+}

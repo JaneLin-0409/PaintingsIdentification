@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑</title>
+    <link rel="shortcut icon" href="/static/images/头像.jpg" />
+    <!-- 调用css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/background.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/guju.css"/>
+    <style>
+        form {
+            margin: 10% auto;
+            width: 50%;
+            border: 3px solid #ccc;
+            padding: 10%
+        }
+    </style>
+</head>
+<body>
+    <p style="width: 100%;height:30px;background: #2176BD;text-align: center;"><a href="/" style="color: white;text-decoration: none;">- 返回首页 -</a></p>
+    <div class="box">
+        <div class="box1">
+            <!-- 网站logo标识 -->
+            <div class="logo">
+                <a  style="color: red;">
+                    <div style="font-size: 150%;"><b>&nbsp;添加联系人</b></div>
+                </a>
+            </div>
+            <!-- logo结束 -->
+        </div>
+        <div class="box2">
+            <!-- 主要内容 -->
+            <div class="zhu">
+<form method="post" action="../add/">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>名字/昵称</th>
+            <td><input name="student_name"></td>
+        </tr>
+        <tr>
+            <th>电话/座机</th>
+            <td><input name="student_no"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+            <button onclick="topFunction()" id="myBtn" title="回顶部">返回顶部</button>
+            <!-- 调用js代码 -->
+            <script src="/static/js/return_top.js"></script>
+        </div>
+        </div>
+</body>
+</html>
+
